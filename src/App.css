@@ -86,7 +86,8 @@ article {
 }
 
 .bierDetailImg {
-  height: 20em;
+  height: 40em;
+  padding: 10px 40px;
   object-fit: contain;
 
 
@@ -108,7 +109,7 @@ article {
 }
 
 .detailCardFrame h1 {
-  font-size: 4rem;
+  font-size: 3rem;
 }
 
 .detailCardFrame h2 {
