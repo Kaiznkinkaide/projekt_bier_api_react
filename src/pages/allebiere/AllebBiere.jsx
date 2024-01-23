@@ -24,12 +24,10 @@ fetchApi()
 
     return ( 
         <>
-        <Nav/>
-        <h1>Alle Biere</h1>
         
         {biere.map((bier, index) => {
             return (
-            <div key={index}>
+            <div className="allebiere" key={index}>
                 <BierCard
                 bier={bier}/>
             </div>

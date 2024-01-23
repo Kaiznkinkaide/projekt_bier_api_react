@@ -10,11 +10,15 @@ const BierCard = ({bier}) => {
 
     return ( 
         <>
-        <img src={bier.image_url} />
-        <h2>{bier.name}</h2>
-        <p>{bier.tagline}</p>
-        <p>Created by: {bier.contributed_by.slice(0, bier.contributed_by.indexOf("<"))}</p>
-        <Link to={`/allebiere/${bier._id}`}>Read More</Link>
+        
+        <img className="allebiereImg" src={bier.image_url} />
+        <div className="bierFacts">
+            <h2>{bier.name}</h2>
+            <h4>{bier.tagline}</h4>
+            <h5>Created by: {bier.contributed_by.slice(0, bier.contributed_by.indexOf("<"))}</h5>
+            <Link to={`/allebiere/${bier._id}`}><button className="detailsBtn">Details</button></Link>
+        </div>
+        
 
         </>
      );

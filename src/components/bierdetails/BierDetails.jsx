@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { Link, useParams } from "react-router-dom";
 import axios from "axios";
-import "./bierdetails.css"
+
 
 const BierDetails = () => {
 
@@ -27,13 +27,26 @@ const BierDetails = () => {
 
     return ( 
         <>
-       <img src={bier.image_url} />
-       <h1>{bier.name}</h1>
-       <h2>{bier.tagline}</h2>
-       <h5>first brewed: {bier.first_brewed}</h5>
-       <h5>Attenuation level: {bier.attenuation_level}</h5>
-       <p>{bier.description}</p>
-       <Link to='/allebiere'><button>🔙</button></Link>
+
+       <div className="detailCardFrame">
+           <img className="bierDetailImg" src={bier.image_url} />
+           <h1>{bier.name}</h1>
+           <h2>{bier.tagline}</h2>
+           
+         <section>
+        <div>
+            <h5>first brewed:</h5> 
+            <h5>{bier.first_brewed}</h5>
+        </div>
+        <div>
+            <h5>Attenuation level:</h5> 
+            <h5> {bier.attenuation_level}</h5>
+        </div>
+         </section>
+        
+           <h3>{bier.description}</h3>
+           <button className="backBtn"><Link to='/allebiere'>🔙</Link></button>
+       </div>
        
         </>
      );
