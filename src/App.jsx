@@ -1,7 +1,7 @@
 
 import { Link, Route, Routes } from 'react-router-dom'
 import './App.css'
-import AlleBiere from './pages/allebiere/Allebiere'
+import AlleBiere from './pages/allebiere/AllebBiere'
 import Home from './pages/home/Home'
 import BierDetails from './components/bierdetails/BierDetails'
 
