@@ -47,6 +47,7 @@ const BierDetails = () => {
            <h3>{bier.description}</h3>
            <button className="backBtn"><Link to='/allebiere'>🔙</Link></button>
        </div>
+       <div className="sticky" ><Link to='/'><button className='stickyBtn'>🍻</button></Link></div>
        
         </>
      );

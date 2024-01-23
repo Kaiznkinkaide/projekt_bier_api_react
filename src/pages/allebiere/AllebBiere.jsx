@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import Nav from "../../components/nav/Nav";
 import axios from "axios"
 import BierCard from "../../components/bierCrad/BierCrad";
+import { Link } from "react-router-dom";
 
 const AlleBiere = () => {
 
@@ -31,8 +32,11 @@ fetchApi()
                 <BierCard
                 bier={bier}/>
             </div>
+            
             )
         })}
+        <div className="sticky" ><Link to='/'><button className='stickyBtn'>🍻</button></Link></div>
+
         </>
      );
 }
